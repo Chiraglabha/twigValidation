@@ -1,0 +1,49 @@
+
+<style>
+        .heading {
+        text-align: center;
+        margin : 3rem
+        }
+        section{
+            font-size : 15px;
+            padding : 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        label{
+            padding-right : 10px
+        }
+        .button{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         margin-top : 3rem;
+         margin-right : 20px
+        }
+        button{
+            margin-right : 2rem;
+        }
+        button > a{
+             text-decoration: none;
+             color : black
+         }
+
+</style>
+<form action="/login/password" method="post">
+    <h1 class="heading">Login Page</h1>
+    <section>
+        <label for="username">Username : </label>
+        <input id="username" name="username" type="text" autocomplete="username" required autofocus>
+    </section>
+    <section>
+        <label for="password">Password : </label>
+        <input id="password" name="password" type="password" autocomplete="current-password" required>
+    </section>
+    <div class="button">
+    <button type="submit" onclick='validatePassword()'>Sign in</button>
+     <button>
+           <a href= '/signup'>Sign up</a>
+    </button>
+    </div>
+</form>
